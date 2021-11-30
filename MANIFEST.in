@@ -1,0 +1,7 @@
+include dash_react_font_awesome_icon_picker/dash_react_font_awesome_icon_picker.min.js
+include dash_react_font_awesome_icon_picker/dash_react_font_awesome_icon_picker.min.js.map
+include dash_react_font_awesome_icon_picker/metadata.json
+include dash_react_font_awesome_icon_picker/package-info.json
+include README.md
+include LICENSE
+include package.json
