@@ -1,0 +1,151 @@
+{
+  "src/lib/components/DashIconPicker.react.js": {
+    "description": "",
+    "displayName": "DashIconPicker",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "value": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The value displayed in the input."
+      },
+      "hideSearch": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the search input is not displayed. Default is false."
+      },
+      "containerStyles": {
+        "type": {
+          "name": "objectOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "Styles for the picker container"
+      },
+      "buttonStyles": {
+        "type": {
+          "name": "objectOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "Styles for the picker button"
+      },
+      "buttonIconStyles": {
+        "type": {
+          "name": "objectOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "Styles for the picker button icon"
+      },
+      "pickerIconStyles": {
+        "type": {
+          "name": "objectOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "Styles for the icons inside of the picker"
+      },
+      "searchInputStyles": {
+        "type": {
+          "name": "objectOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "Styles for the search input inside of the picker"
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS class for div"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/DashIconPickerItem.react.js": {
+    "description": "",
+    "displayName": "DashIconPickerItem",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "icon": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The name of the icon to render. Example: \"FaAdobe\""
+      },
+      "size": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The size of the icon",
+        "defaultValue": {
+          "value": "24",
+          "computed": false
+        }
+      },
+      "color": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The color of the icon. Default: \"#000\"",
+        "defaultValue": {
+          "value": "\"#000\"",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "CSS class for div"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  }
+}
