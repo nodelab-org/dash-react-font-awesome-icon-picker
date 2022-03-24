@@ -10,30 +10,29 @@
 }
 
 \usage{
-dashIconPicker(id=NULL, value=NULL, hideSearch=NULL, containerStyles=NULL,
-buttonStyles=NULL, buttonIconStyles=NULL,
-pickerIconStyles=NULL, searchInputStyles=NULL,
-className=NULL)
+dashIconPicker(id=NULL, buttonIconStyles=NULL, buttonStyles=NULL,
+className=NULL, containerStyles=NULL, hideSearch=NULL,
+pickerIconStyles=NULL, searchInputStyles=NULL, value=NULL)
 }
 
 \arguments{
 \item{id}{Character. The ID used to identify this component in Dash callbacks.}
 
-\item{value}{Character. The value displayed in the input.}
-
-\item{hideSearch}{Logical. If true, the search input is not displayed. Default is false.}
-
-\item{containerStyles}{List with named elements and values of type character. Styles for the picker container}
+\item{buttonIconStyles}{List with named elements and values of type character. Styles for the picker button icon}
 
 \item{buttonStyles}{List with named elements and values of type character. Styles for the picker button}
 
-\item{buttonIconStyles}{List with named elements and values of type character. Styles for the picker button icon}
+\item{className}{Character. CSS class for div}
+
+\item{containerStyles}{List with named elements and values of type character. Styles for the picker container}
+
+\item{hideSearch}{Logical. If true, the search input is not displayed. Default is false.}
 
 \item{pickerIconStyles}{List with named elements and values of type character. Styles for the icons inside of the picker}
 
 \item{searchInputStyles}{List with named elements and values of type character. Styles for the search input inside of the picker}
 
-\item{className}{Character. CSS class for div}
+\item{value}{Character. The value displayed in the input.}
 }
 
 \value{named list of JSON elements corresponding to React.js properties and their values}

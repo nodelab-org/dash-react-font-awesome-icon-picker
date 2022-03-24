@@ -1,8 +1,8 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-dashIconPickerItem <- function(id=NULL, icon=NULL, size=NULL, color=NULL, className=NULL) {
+dashIconPickerItem <- function(id=NULL, className=NULL, color=NULL, icon=NULL, size=NULL) {
     
-    props <- list(id=id, icon=icon, size=size, color=color, className=className)
+    props <- list(id=id, className=className, color=color, icon=icon, size=size)
     if (length(props) > 0) {
         props <- props[!vapply(props, is.null, logical(1))]
     }
@@ -10,7 +10,7 @@ dashIconPickerItem <- function(id=NULL, icon=NULL, size=NULL, color=NULL, classN
         props = props,
         type = 'DashIconPickerItem',
         namespace = 'dash_react_font_awesome_icon_picker',
-        propNames = c('id', 'icon', 'size', 'color', 'className'),
+        propNames = c('id', 'className', 'color', 'icon', 'size'),
         package = 'dashReactFontAwesomeIconPicker'
         )
 

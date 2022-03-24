@@ -5,8 +5,8 @@ using Dash
 const resources_path = realpath(joinpath( @__DIR__, "..", "deps"))
 const version = "0.0.1"
 
-include("dashiconpicker.jl")
-include("dashiconpickeritem.jl")
+include("jl/dashiconpicker.jl")
+include("jl/dashiconpickeritem.jl")
 
 function __init__()
     DashBase.register_package(

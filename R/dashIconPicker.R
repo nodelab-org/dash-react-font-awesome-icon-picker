@@ -1,8 +1,8 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-dashIconPicker <- function(id=NULL, value=NULL, hideSearch=NULL, containerStyles=NULL, buttonStyles=NULL, buttonIconStyles=NULL, pickerIconStyles=NULL, searchInputStyles=NULL, className=NULL) {
+dashIconPicker <- function(id=NULL, buttonIconStyles=NULL, buttonStyles=NULL, className=NULL, containerStyles=NULL, hideSearch=NULL, pickerIconStyles=NULL, searchInputStyles=NULL, value=NULL) {
     
-    props <- list(id=id, value=value, hideSearch=hideSearch, containerStyles=containerStyles, buttonStyles=buttonStyles, buttonIconStyles=buttonIconStyles, pickerIconStyles=pickerIconStyles, searchInputStyles=searchInputStyles, className=className)
+    props <- list(id=id, buttonIconStyles=buttonIconStyles, buttonStyles=buttonStyles, className=className, containerStyles=containerStyles, hideSearch=hideSearch, pickerIconStyles=pickerIconStyles, searchInputStyles=searchInputStyles, value=value)
     if (length(props) > 0) {
         props <- props[!vapply(props, is.null, logical(1))]
     }
@@ -10,7 +10,7 @@ dashIconPicker <- function(id=NULL, value=NULL, hideSearch=NULL, containerStyles
         props = props,
         type = 'DashIconPicker',
         namespace = 'dash_react_font_awesome_icon_picker',
-        propNames = c('id', 'value', 'hideSearch', 'containerStyles', 'buttonStyles', 'buttonIconStyles', 'pickerIconStyles', 'searchInputStyles', 'className'),
+        propNames = c('id', 'buttonIconStyles', 'buttonStyles', 'className', 'containerStyles', 'hideSearch', 'pickerIconStyles', 'searchInputStyles', 'value'),
         package = 'dashReactFontAwesomeIconPicker'
         )
 

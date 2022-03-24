@@ -3,9 +3,9 @@ import { IconPicker } from 'react-fa-icon-picker'
 import PropTypes from 'prop-types';
 
 function DashIconPicker(props) {
-    const [value, setValue] = useState("")
+    const [value, setValue] = useState(props.value)
     return (
-        <div id={props.id} class={props.className}>
+        <div id={props.id} className={props.className}>
             <IconPicker
                 value={value}
                 hideSearch={props.hideSearch}
@@ -24,6 +24,7 @@ function DashIconPicker(props) {
 }
         
 DashIconPicker.defaultProps = {
+    value: "FaSquare"
 };
 
 DashIconPicker.propTypes = {
