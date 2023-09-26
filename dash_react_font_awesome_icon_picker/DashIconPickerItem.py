@@ -23,20 +23,24 @@ Keyword arguments:
 
 - size (number; default 24):
     The size of the icon."""
+    _children_props = []
+    _base_nodes = ['children']
+    _namespace = 'dash_react_font_awesome_icon_picker'
+    _type = 'DashIconPickerItem'
     @_explicitize_args
     def __init__(self, id=Component.REQUIRED, icon=Component.REQUIRED, size=Component.UNDEFINED, color=Component.UNDEFINED, className=Component.UNDEFINED, **kwargs):
         self._prop_names = ['id', 'className', 'color', 'icon', 'size']
-        self._type = 'DashIconPickerItem'
-        self._namespace = 'dash_react_font_awesome_icon_picker'
         self._valid_wildcard_attributes =            []
         self.available_properties = ['id', 'className', 'color', 'icon', 'size']
         self.available_wildcard_properties =            []
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()
-        _locals.update(kwargs)  # For wildcard attrs
-        args = {k: _locals[k] for k in _explicit_args if k != 'children'}
+        _locals.update(kwargs)  # For wildcard attrs and excess named props
+        args = {k: _locals[k] for k in _explicit_args}
+
         for k in ['id', 'icon']:
             if k not in args:
                 raise TypeError(
                     'Required argument `' + k + '` was not specified.')
+
         super(DashIconPickerItem, self).__init__(**args)

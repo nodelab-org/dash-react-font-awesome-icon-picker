@@ -6,10 +6,14 @@ authors = ["Jon Thompson <jjt@tutanota.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.5"
+python = ">=3.6"
 
 [tool.poetry.dev-dependencies]
 dash = "^2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+dash = "^2.13.0"
+pyyaml = "^6.0.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
