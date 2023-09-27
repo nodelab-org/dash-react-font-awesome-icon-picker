@@ -6,8 +6,8 @@ Depends: R (>= 3.0.2)
 Imports: 
 Suggests: 
 License: Apache-2.0 + file LICENSE
-URL: https://github.com/JonThom/dash-react-font-awesome-icon-picker
-BugReports: https://github.com/JonThom/dash-react-font-awesome-icon-picker/issues
+URL: https://github.com/nodelab-org/dash-react-font-awesome-icon-picker
+BugReports: https://github.com/nodelab-org/dash-react-font-awesome-icon-picker/issues
 Encoding: UTF-8
 LazyData: true
 KeepSource: true
